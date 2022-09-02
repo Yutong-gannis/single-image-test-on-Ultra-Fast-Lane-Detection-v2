@@ -95,7 +95,7 @@ if __name__ == "__main__":
         transforms.ToTensor(),
         transforms.Normalize((0.485, 0.456, 0.406), (0.229, 0.224, 0.225)),
     ])
-    img_path = "D:/autodrive/YOLOPv2/data/10.jpg"
+    img_path = "data/10.jpg"
     img = cv2.imread(img_path)
     im0 = img.copy()
     img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
@@ -114,5 +114,5 @@ if __name__ == "__main__":
             cv2.circle(im0, coord, 5, (0, 255, 0), -1)
     n = 2
     cv2.imshow('demo', cv2.resize(im0,(int(img_w/n), int(img_h/n))))
-    cv2.imwrite("D:/autodrive/YOLOPv2/data/11.jpg", im0)
+    cv2.imwrite("data/11.jpg", im0)
     cv2.waitKey(0)
