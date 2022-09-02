@@ -4,6 +4,13 @@ PyTorch implementation of the paper "[Ultra Fast Deep Lane Detection with Hybrid
 
 ![](ufldv2.png "vis")
 
+# Single image demo
+In case that my system is windows, I can't install nvidia.dali_data, so I delete this package in utils/common.py.
+To test and show on the single image, you can run:
+'''
+python img_demo.py configs/culane_res18.py --test_model /path/to/your/culane_res18.pth
+'''
+
 # Demo 
 <a href="https://youtu.be/VkvpoHlaMe0
 " target="_blank"><img src="http://img.youtube.com/vi/VkvpoHlaMe0/0.jpg" 
